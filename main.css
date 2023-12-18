@@ -1,0 +1,70 @@
+/* Google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'sans-serif';
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    background: #0b1320;
+    color: #fafafccc;
+
+
+
+}
+
+/* HEADER STYLE */
+
+header {
+    position: fixed;
+    /* fixes header at the top spanning the whole width of viewport */
+    top: 0; left: 0; right: 0;  
+    z-index: 1000;
+    background: #fafafccc;
+    display: flex;
+    justify-content: space-between;
+    /* vertical alignment (cross axis) */
+    align-items: center;  
+    padding: 15px 10%;
+    height: 40px;
+
+
+}
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    flex: 1;
+}
+
+.navbar ul li, a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: #091c26;
+
+}
+
+.navbar ul li a:hover {
+    color: #114c5c;
+}
+
+.about {
+    margin-top: 40px;
+}

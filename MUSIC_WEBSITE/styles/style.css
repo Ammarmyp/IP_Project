@@ -6,6 +6,8 @@
   --primary-color: #0b1320;
   --black:#13131a;
   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+  --button-color:#36e2ec;
+
 }
 
 *{
@@ -70,7 +72,7 @@ section{
   top: 0;
   height: 100%;
   width: 0%;
-  background: #bd394c;
+  background: var(--button-color);
   z-index: -1;
   transition: .3s linear;
 }
@@ -88,6 +90,12 @@ section{
   width: 100%;
 }
 
+.btn:hover {
+  color: #0b1320;
+  font-weight: 600;
+
+}
+
 
 
 /* home */
@@ -95,7 +103,7 @@ section{
 .home{
   display: flex;
   align-items: center;
-  background: url(Images2/ImagineHead.jpg) no-repeat;
+  background: url(../Images2/ImagineHead.jpg) no-repeat;
   min-height: 110vh;
   background-size: cover;
   background-position: center;

@@ -1,0 +1,69 @@
+/* header */
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    background: #f0f4ff;
+    box-shadow: var(--box-shadow);
+    transition: 2s ease-in-out;
+  }
+  
+  .header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+  }
+  
+  .header .logo i{
+    color: var(--main-color);
+    padding-right: .5rem;
+  }
+  
+  .header .navbar a{
+    font-size: 2rem;
+    color: var(--black);
+    margin-left: 2rem;
+  }
+  
+  .header .navbar a:hover{
+    color: var(--primary-color);
+  }
+  
+  #menu{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--black);
+    display: none;
+  }
+  
+  /* end */
+  
+  /* On scroll appearance */
+
+  .header.scrolled {
+    background: #979ba1; /* Add your desired background color here */
+    opacity: 1; /* Adjust as needed */
+    padding: 10px 10%;
+    height: 40px;
+    transition: 1.5s ease-in-out;
+    
+
+
+  }
+  .header.scrolled .navbar a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0b1320;
+    transition: 0.4s ease-in-out;
+  }
+
+  .header.scrolled .navbar a:hover{
+    font-weight: 650;
+    font-size: 17px;
+    color: #ef5068;
+  }

@@ -38,8 +38,9 @@ function rotate() {
     gamesPlayed++;
     scoreDisplay.innerHTML = `Score: ${score}`;
 
-    const oneGame = 10;
-    const rewardNum = 5;
+    // number of rounds per game and amount required for win
+    const oneGame = 2;
+    const rewardNum = 1;
     if (gamesPlayed === oneGame) {
       // action after 10 games
       if (score >= rewardNum) {
